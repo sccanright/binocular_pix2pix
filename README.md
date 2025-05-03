@@ -51,8 +51,8 @@ pip install wandb
 - Clone this repo:
 
 ```bash
-git clone https://github.com/sccanright/binocular-pix2pix-study
-cd binocular-pix2pix-study
+git clone https://github.com/sccanright/binocular_pix2pix
+cd binocular_pix2pix
 ```
 
 ### Apply a pretrained model
@@ -100,7 +100,7 @@ If you use this code in your research, please cite both this repository and the 
   author = {Slater Canright},
   title = {Binocular Camera Pix2Pix Model},
   year = {2025},
-  url = {https://github.com/sccanright/binocular-pix2pix-study}
+  url = {https://github.com/sccanright/binocular_pix2pix}
 }
 
 @inproceedings{isola2017image,
