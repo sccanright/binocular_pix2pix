@@ -34,10 +34,8 @@ conda activate pix2pix
 ```
 
 - Install dependencies via:
+  - requirements.txt
 
-```bash
-pip install -r requirements.txt
-```
 Or:
 
 ```bash
@@ -81,13 +79,12 @@ python train.py --dataroot ./datasets/FIELDSET --name NAMEofMODEL --model pix2pi
 ```
 
 ## Prerequisites
-
 - Linux, macOS, or Windows with WSL
 - Python 3.8+
 - CPU or NVIDIA GPU + CUDA CuDNN
 
 ## Data Availability
-A small subset of image pairs (input and target) used for training and evaluation is included in the data/sample_results/ folder. Create your own datasets with the same style as required for this study.
+A small sample of test data is included in the data/sample_results/ folder to verify model functionality and demonstrate the expected input/output format. To run your own experiments, create datasets that follow the same structure and formatting as shown in this sample.
 
 ## Model Checkpoints
 Preliminary pre-trained models for each image style can be found in the models/ directory.
