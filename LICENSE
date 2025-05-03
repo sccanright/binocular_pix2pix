@@ -24,7 +24,7 @@ ______________________________________________________________________________
 
 Portions of this project incorporate or adapt code from the original pix2pix
 repository by Phillip Isola and Jun-Yan Zhu:
-[pytorch-CycleGAN-and-pix2pix] (https://github.com/phillipi/pix2pix)
+https://github.com/phillipi/pix2pix
 
 The following BSD license applies to that portion of the work.
 ______________________________________________________________________________
