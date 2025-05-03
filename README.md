@@ -74,7 +74,7 @@ bash ./results/NAME/test_latest
 
 ### Training your models
 
-- Train new model:
+- Train a new model:
 (Update netG and input/output channels as needed)
 ```bash
 python train.py --dataroot ./datasets/FIELDSET --name NAMEofMODEL --model pix2pix --gpu_ids 0 --netG unet_1024 --input_nc 3 --output_nc 30
@@ -112,12 +112,36 @@ If you use this code in your research, please cite both this repository and the 
 }
 ```
 
-## New code added for this project
+## New Code
 - ButtonCapture.py
 - crop.py
 - slice.py
 - reorganize_data.py
 - analyze.py
+
+## Optional Files
+### Qualitative optimization code
+- exposure_test.py
+- GPIOTest.py
+- GPIOZeroTest.py
+
+### SolidWorks CAD files
+- Camera Box
+- Box Lid
+- EDoF Holder
+- EDoF Lid
+- Lens Mount - Left
+- Lens Mount - Right
+
+### Download Optionals
+- SolidWorks and extra code
+  - [exras](https://github.com/sccanright/binocular_pix2pix/tree/extras)
+
+```bash
+# Clone just the extras branch directly:
+git clone --branch extras --single-branch https://github.com/sccanright/binocular_pix2pix/tree/extras
+```
+  
 
 ## Related Projects
 
