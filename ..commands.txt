@@ -1,0 +1,23 @@
+0) 
+conda activate pix2pix
+cd binocular_pix2pix
+
+1) 
+python crop.py OR python crop.py --iterative (to guess and check crop values)
+python slice.py OR python slice.py --size pixels (to pick size of square slices)
+python reorganize_data.py OR python reorganize_data.py --root_folder /path/to/data --split_percentage ## --destination_folder /path/to/dest
+
+2) 
+python train.py --dataroot ./datasets/FIELDSET --name noslicedata01 --model pix2pix --gpu_ids 0 --netG unet_1024 --input_nc 3 --output_nc 30
+
+3) 
+python test.py --dataroot ./datasets/FIELDSET --name noslicedata01 --model pix2pix --gpu_ids 0 --netG unet_1024 --input_nc 3 --output_nc 30
+
+** Increment the --name to create and test new models **
+** Update netG and input/output channels as needed **
+
+4)
+python analyze.py results/folder
+
+** Make sure to update 'folder'	for desired model **
+
