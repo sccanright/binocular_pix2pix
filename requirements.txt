@@ -1,0 +1,5 @@
+conda install torch
+conda install torchvision
+pip install dominate
+pip install visdom
+pip install wandb
