@@ -1,0 +1,21 @@
+512slicedata01:
+Average MAE: 0.134987
+Average MSE: 0.031246
+Average PSNR: 16.80 dB
+Average SSIM: 0.860874
+Average Cross Entropy: 0.702725
+
+1024slicedata01:
+Average MAE: 0.144813
+Average MSE: 0.036521
+Average PSNR: 15.82 dB
+Average SSIM: 0.807273
+Average Cross Entropy: 0.718303
+
+noslicedata01:
+Average MAE: 0.133560
+Average MSE: 0.035274
+Average PSNR: 15.55 dB
+Average SSIM: 0.745434
+Average Cross Entropy: 0.698731
+
