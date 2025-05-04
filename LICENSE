@@ -1,6 +1,7 @@
 MIT License
 
 Copyright (c) 2025, Slater Canright
+All rights reserved.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -23,7 +24,7 @@ SOFTWARE.
 ------------------ LICENSE FOR pytorch-CycleGAN-and-pix2pix --------------------
 BSD License
 
-pytorch-CycleGAN-and-pix2pi
+for pytorch-CycleGAN-and-pix2pi
 Copyright (c) 2017, Jun-Yan Zhu and Taesung Park
 All rights reserved.
 
