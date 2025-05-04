@@ -106,9 +106,7 @@ python test.py --dataroot ./datasets/NO_SLICE_FIELDSET --name noslicedata01 --mo
 ```
 
 - Locate results:
-```bash
-bash ./results/NAME/test_latest
-```
+  - ./results/NAME/test_latest
 
 ### Training your models
 
