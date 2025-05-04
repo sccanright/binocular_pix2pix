@@ -1,6 +1,6 @@
 0) 
 conda activate pix2pix
-cd binocular_pix2pix
+cd varifocal_pix2pix
 
 1) 
 python crop.py OR python crop.py --iterative (to guess and check crop values)
