@@ -73,9 +73,9 @@ unzip checkpoints.zip
 
 ```bash
 # Download zipped folders
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/512_SLICED_FIELDSET.zip -O datasets/512_SLICED_FIELDSET.zip
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/1024_SLICED_FIELDSET.zip -O datasets/1024_SLICED_FIELDSET.zip
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/NO_SLICE_FIELDSET.zip -O datasets/NO_SLICE_FIELDSET.zip
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/512_SLICED_FIELDSET.zip -O datasets/512_SLICED_FIELDSET.zip
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/1024_SLICED_FIELDSET.zip -O datasets/1024_SLICED_FIELDSET.zip
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/NO_SLICE_FIELDSET.zip -O datasets/NO_SLICE_FIELDSET.zip
 
 # Unzip to the correct folder
 unzip datasets/512_SLICED_FIELDSET.zip
