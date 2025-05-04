@@ -5,7 +5,7 @@
 This repository contains the code, models, and supporting materials for a research project using a modified Pix2Pix model to synthesize depth-aware focal stacks from a single image input. The system uses a binocular (dual-camera) setup: with an EDoF (Extended Depth of Field) lens and a varifocal camera to generate depth-variant imagery. This project builds on the original [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model, extending it for generating varifocal image stacks from a single EDoF input.
 
 ## Example Results:
-Presented and discussed in greater detail in the paper:  
+Presented and discussed in greater detail in the research paper:  
 **ADD PAPER AND SUPPLEMENT HERE**  
 
 Data is presented as: EDoF image | Generated images | Ground truth images  
