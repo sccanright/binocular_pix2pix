@@ -94,8 +94,10 @@ rm datasets/NO_SLICE_FIELDSET.zip
 ```
 
 - Run the tests:
-
+  - !! Only run one model at a time !!
+ 
 ```bash
+# Testing trained models
 python test.py --dataroot ./datasets/512_SLICED_FIELDSET --name 512slicedata01 --model pix2pix --gpu_ids 0 --netG unet_512 --input_nc 3 --output_nc 30
 
 python test.py --dataroot ./datasets/1024_SLICED_FIELDSET --name 1024slicedata01 --model pix2pix --gpu_ids 0 --netG unet_1024 --input_nc 3 --output_nc 30
