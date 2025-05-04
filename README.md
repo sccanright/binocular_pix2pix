@@ -53,7 +53,7 @@ git clone https://github.com/sccanright/binocular_pix2pix
 cd binocular_pix2pix
 ```
 
-### Apply a pretrained model
+### Download a pretrained model
 - Pre-trained models are available for download and unzipping
   - release: [models](https://github.com/sccanright/binocular_pix2pix/releases/tag/models)
     - Make sure it is saved within the binocular_pix2pix folder
@@ -64,7 +64,26 @@ wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/ch
 unzip checkpoints.zip
 ``` 
 
-- Test any of the trained models:
+### Test any of the trained models
+- Test datasets are available for download and unzipping
+  - release: [data](https://github.com/sccanright/binocular_pix2pix/releases/tag/data)
+    - Make sure they are saved within the binocular_pix2pix/datasets folder
+
+- Download and unzip the test sets to ./datasets:
+
+```bash
+# Download zipped folders
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/512_SLICED_FIELDSET.zip -O datasets/512_SLICED_FIELDSET.zip
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/1024_SLICED_FIELDSET.zip -O datasets/1024_SLICED_FIELDSET.zip
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/NO_SLICE_FIELDSET.zip -O datasets/NO_SLICE_FIELDSET.zip
+
+# Unzip to the correct folder
+unzip datasets/512_SLICED_FIELDSET.zip
+unzip datasets/1024_SLICED_FIELDSET.zip
+unzip datasets/NO_SLICE_FIELDSET.zip
+```
+
+- Run the tests:
 
 ```bash
 python test.py --dataroot ./datasets/512_SLICED_FIELDSET --name 512slicedata01 --model pix2pix --gpu_ids 0 --netG unet_512 --input_nc 3 --output_nc 30
@@ -74,7 +93,7 @@ python test.py --dataroot ./datasets/1024_SLICED_FIELDSET --name 1024slicedata01
 python test.py --dataroot ./datasets/NO_SLICE_FIELDSET --name noslicedata01 --model pix2pix --gpu_ids 0 --netG unet_1024 --input_nc 3 --output_nc 30
 ```
 
-- Locate results
+- Locate results:
 ```bash
 bash ./results/NAME/test_latest
 ```
@@ -91,9 +110,6 @@ python train.py --dataroot ./datasets/FIELDSET --name NAMEofMODEL --model pix2pi
 - Linux, macOS, or Windows with WSL
 - Python 3.8+
 - CPU or NVIDIA GPU + CUDA CuDNN
-
-## Data Availability
-A small test data sample is included in the datasets/PICKMODEL/ folder to verify model functionality and demonstrate the expected input/output format. To run your own experiments, create datasets that follow the same structure and formatting as shown in this sample.
 
 ## Citation
 If you use this code in your research, please cite both this repository and the original Pix2Pix project:
