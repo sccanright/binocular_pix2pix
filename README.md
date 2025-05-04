@@ -61,7 +61,12 @@ cd binocular_pix2pix
 ```bash
 # Download the checkpoints model release:
 wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/checkpoints.zip -O checkpoints.zip
+
+# Unzip the checkpoints.zip file
 unzip checkpoints.zip
+
+# Remove the checkpoints.zip file after extraction
+rm checkpoints.zip
 ``` 
 
 ### Test any of the trained models
@@ -81,6 +86,11 @@ wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/NO_S
 unzip datasets/512_SLICED_FIELDSET.zip -d datasets/
 unzip datasets/1024_SLICED_FIELDSET.zip -d datasets/
 unzip datasets/NO_SLICE_FIELDSET.zip -d datasets/
+
+# Remove the .zip files after extraction
+rm datasets/512_SLICED_FIELDSET.zip
+rm datasets/1024_SLICED_FIELDSET.zip
+rm datasets/NO_SLICE_FIELDSET.zip
 ```
 
 - Run the tests:
