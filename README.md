@@ -1,8 +1,8 @@
-# Binocular Camera Pix2Pix Model
+# EdoF and Varifocal Camera Pix2Pix Model
 
 ## Overview
 
-This repository contains the code, models, and supporting materials for a research project using a modified Pix2Pix model to synthesize depth-aware focal stacks from a single image input. The system uses a binocular (dual-camera) setup along with an EDoF (Extended Depth of Field) lens and a varifocal camera to generate depth-variant imagery. This project builds on the original [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model, extending it for binocular input and synthetic refocusing.
+This repository contains the code, models, and supporting materials for a research project using a modified Pix2Pix model to synthesize depth-aware focal stacks from a single image input. The system uses a binocular (dual-camera) setup: with an EDoF (Extended Depth of Field) lens and a varifocal camera to generate depth-variant imagery. This project builds on the original [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) model, extending it for generating varifocal image stacks from a single EDoF input.
 
 ## Example Results:
 Presented and discussed in greater detail in the paper:  
@@ -49,18 +49,18 @@ pip install wandb
 - Clone this repo:
 
 ```bash
-git clone https://github.com/sccanright/binocular_pix2pix
-cd binocular_pix2pix
+git clone https://github.com/sccanright/varifocal_pix2pix
+cd varifocal_pix2pix
 ```
 
 ### Download a pretrained model
 - Pre-trained models are available for download and unzipping
-  - release: [models](https://github.com/sccanright/binocular_pix2pix/releases/tag/models)
-    - Make sure it is saved within the binocular_pix2pix folder
+  - release: [models](https://github.com/sccanright/varifocal_pix2pix/releases/tag/models)
+    - Make sure it is saved within the varifocal_pix2pix folder
 
 ```bash
 # Download the checkpoints model release:
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/checkpoints.zip -O checkpoints.zip
+wget https://github.com/sccanright/varifocal_pix2pix/releases/download/models/checkpoints.zip -O checkpoints.zip
 
 # Unzip the checkpoints.zip file
 unzip checkpoints.zip
@@ -71,16 +71,16 @@ rm checkpoints.zip
 
 ### Test any of the trained models
 - Test datasets are available for download and unzipping
-  - release: [data](https://github.com/sccanright/binocular_pix2pix/releases/tag/data)
-    - Make sure they are saved within the binocular_pix2pix/datasets folder
+  - release: [data](https://github.com/sccanright/varifocal_pix2pix/releases/tag/data)
+    - Make sure they are saved within the varifocal_pix2pix/datasets folder
 
 - Download and unzip the test sets to ./datasets:
 
 ```bash
 # Download zipped folders
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/512_SLICED_FIELDSET.zip -O datasets/512_SLICED_FIELDSET.zip
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/1024_SLICED_FIELDSET.zip -O datasets/1024_SLICED_FIELDSET.zip
-wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/NO_SLICE_FIELDSET.zip -O datasets/NO_SLICE_FIELDSET.zip
+wget https://github.com/sccanright/varifocal_pix2pix/releases/download/data/512_SLICED_FIELDSET.zip -O datasets/512_SLICED_FIELDSET.zip
+wget https://github.com/sccanright/varifocal_pix2pix/releases/download/data/1024_SLICED_FIELDSET.zip -O datasets/1024_SLICED_FIELDSET.zip
+wget https://github.com/sccanright/varifocal_pix2pix/releases/download/data/NO_SLICE_FIELDSET.zip -O datasets/NO_SLICE_FIELDSET.zip
 
 # Unzip to the correct folder
 unzip datasets/512_SLICED_FIELDSET.zip -d datasets/
@@ -125,11 +125,11 @@ python train.py --dataroot ./datasets/FIELDSET --name NAMEofMODEL --model pix2pi
 If you use this code in your research, please cite both this repository and the original Pix2Pix project:
 
 ```bash
-@misc{canright2025binocularpix2pix,
+@misc{canright2025varifocalpix2pix,
   author = {Slater Canright},
-  title = {Binocular Camera Pix2Pix Model},
+  title = {varifocal Camera Pix2Pix Model},
   year = {2025},
-  url = {https://github.com/sccanright/binocular_pix2pix}
+  url = {https://github.com/sccanright/varifocal_pix2pix}
 }
 
 @inproceedings{isola2017image,
@@ -164,11 +164,11 @@ If you use this code in your research, please cite both this repository and the 
 
 ### Download Optionals
 - SolidWorks and extra code
-  - [extras](https://github.com/sccanright/binocular_pix2pix/tree/extras)
+  - [extras](https://github.com/sccanright/varifocal_pix2pix/tree/extras)
 
 ```bash
 # Clone just the extras branch directly:
-git clone --branch extras --single-branch https://github.com/sccanright/binocular_pix2pix
+git clone --branch extras --single-branch https://github.com/sccanright/varifocal_pix2pix
 ```
   
 
