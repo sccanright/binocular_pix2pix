@@ -54,8 +54,16 @@ cd binocular_pix2pix
 ```
 
 ### Apply a pretrained model
+- Pre-trained models are available for download and unzipping
+  - release: [models](https://github.com/sccanright/binocular_pix2pix/releases/tag/models)
+    - Make sure it is saved within the binocular_pix2pix folder
 
-- Test trained models:
+```bash
+wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/checkpoints.zip -O checkpoints.zip
+unzip checkpoints.zip
+``` 
+
+- Test any of the trained models:
 
 ```bash
 python test.py --dataroot ./datasets/512_SLICED_FIELDSET --name 512slicedata01 --model pix2pix --gpu_ids 0 --netG unet_512 --input_nc 3 --output_nc 30
@@ -84,10 +92,7 @@ python train.py --dataroot ./datasets/FIELDSET --name NAMEofMODEL --model pix2pi
 - CPU or NVIDIA GPU + CUDA CuDNN
 
 ## Data Availability
-A small sample of test data is included in the data/sample_results/ folder to verify model functionality and demonstrate the expected input/output format. To run your own experiments, create datasets that follow the same structure and formatting as shown in this sample.
-
-## Model Checkpoints
-Preliminary pre-trained models for each image style can be found in the models/ directory.
+A small test data sample is included in the datasets/PICKMODEL/ folder to verify model functionality and demonstrate the expected input/output format. To run your own experiments, create datasets that follow the same structure and formatting as shown in this sample.
 
 ## Citation
 If you use this code in your research, please cite both this repository and the original Pix2Pix project:
