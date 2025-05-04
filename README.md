@@ -17,7 +17,7 @@ Data is presented as: EDoF image | Generated images | Ground truth images
 - 1024x1024 Model Results
   ![1024slice_supplement](https://github.com/user-attachments/assets/8f408938-c8fc-4466-a78d-0acd02b005c9)
 
-- No Slice model Results
+- No Slice Model Results
   ![noslice_supplement](https://github.com/user-attachments/assets/4099cac7-156a-4b19-bbd0-424b89ecc72a)
 
 
@@ -59,6 +59,7 @@ cd binocular_pix2pix
     - Make sure it is saved within the binocular_pix2pix folder
 
 ```bash
+# Download the checkpoints model release:
 wget https://github.com/sccanright/binocular_pix2pix/releases/download/models/checkpoints.zip -O checkpoints.zip
 unzip checkpoints.zip
 ``` 
@@ -141,7 +142,7 @@ If you use this code in your research, please cite both this repository and the 
 
 ```bash
 # Clone just the extras branch directly:
-git clone --branch extras --single-branch https://github.com/sccanright/binocular_pix2pix/tree/extras
+git clone --branch extras --single-branch https://github.com/sccanright/binocular_pix2pix
 ```
   
 
