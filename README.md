@@ -164,7 +164,7 @@ If you use this code in your research, please cite both this repository and the 
 
 ### Download Optionals
 - SolidWorks and extra code
-  - [exras](https://github.com/sccanright/binocular_pix2pix/tree/extras)
+  - [extras](https://github.com/sccanright/binocular_pix2pix/tree/extras)
 
 ```bash
 # Clone just the extras branch directly:
