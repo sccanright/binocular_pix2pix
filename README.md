@@ -78,9 +78,9 @@ wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/1024
 wget https://github.com/sccanright/binocular_pix2pix/releases/download/data/NO_SLICE_FIELDSET.zip -O datasets/NO_SLICE_FIELDSET.zip
 
 # Unzip to the correct folder
-unzip datasets/512_SLICED_FIELDSET.zip
-unzip datasets/1024_SLICED_FIELDSET.zip
-unzip datasets/NO_SLICE_FIELDSET.zip
+unzip datasets/512_SLICED_FIELDSET.zip -d datasets/
+unzip datasets/1024_SLICED_FIELDSET.zip -d datasets/
+unzip datasets/NO_SLICE_FIELDSET.zip -d datasets/
 ```
 
 - Run the tests:
